@@ -48,8 +48,9 @@ export default {
       return path.test(this.$route.fullPath)
     },
     selectedMovie() {
-      console.log(this.$store.state.movie.movies)
+      console.log(this.$store.state.movie)
       console.log(this.hasSelectedMovie);
+      console.log(this.$route.params)
     },
     toAbout() {
       this.$router.push('/about');
